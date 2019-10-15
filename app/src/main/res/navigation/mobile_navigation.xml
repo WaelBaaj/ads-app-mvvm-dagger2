@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.wa82bj.ads_mvvm_github.ui.main.allAds.HomeFragment"
+        android:label="SyriAds">
+        <action
+            android:id="@+id/action_ToDetailActivity"
+            app:destination="@id/detailActivity" />
+        <argument
+            android:name="productId"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_to_webViewActivity"
+            app:destination="@id/webViewActivity" />
+        <action
+            android:id="@+id/action_ToOffersFragment"
+            app:destination="@id/offerFragment" />
+        <action
+            android:id="@+id/action_ToSearchResultFragment"
+            app:destination="@id/searchResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.wa82bj.ads_mvvm_github.ui.main.news.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/news_fragment">
+        <action
+            android:id="@+id/action_ToDetailActivity"
+            app:destination="@id/detailActivity" />
+        <action
+            android:id="@+id/action_to_webViewActivity"
+            app:destination="@id/webViewActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.wa82bj.ads_mvvm_github.ui.detail.DetailActivity"
+        android:label="DetailActivity" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.wa82bj.ads_mvvm_github.ui.main.favorite.FavoriteFragment"
+        android:label="Favorite">
+        <action
+            android:id="@+id/action_ToDetailActivity"
+            app:destination="@id/detailActivity" />
+        <action
+            android:id="@+id/action_to_webViewActivity"
+            app:destination="@id/webViewActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/webViewActivity"
+        android:name="com.wa82bj.ads_mvvm_github.ui.webview.WebViewActivity"
+        android:label="WebViewActivity" />
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.wa82bj.ads_mvvm_github.ui.main.offers.OfferFragment"
+        android:label="Offers"
+        tools:layout="@layout/offer_fragment" >
+        <action
+            android:id="@+id/action_ToDetailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.wa82bj.ads_mvvm_github.ui.main.serachResult.SearchResultFragment"
+        android:label="Result" >
+        <action
+            android:id="@+id/action_ToDetailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.wa82bj.ads_mvvm_github.ui.auth.LoginActivity"
+        android:label="LoginActivity" />
+</navigation>

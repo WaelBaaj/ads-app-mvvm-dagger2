@@ -1,0 +1,89 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop">
+
+    <data>
+        <variable
+            name="newsModel"
+            type="com.wa82bj.ads_mvvm_github.data.model.NewsModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingTop="@dimen/_1sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/image_thumbnail"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_thumbnail"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/app_name"
+            android:elevation="@dimen/design_appbar_elevation"
+            android:scaleType="centerCrop"
+            app:image="@{newsModel.image}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{newsModel.title}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPrimary"
+            app:layout_constraintLeft_toRightOf="@+id/image_thumbnail"
+            app:layout_constraintRight_toRightOf="@id/cardview"
+            app:layout_constraintTop_toTopOf="@id/cardview"
+            tools:text="@tools:sample/full_names" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{newsModel.dateCreated}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardview"
+            app:layout_constraintEnd_toEndOf="@+id/cardview"
+            app:layout_constraintLeft_toRightOf="@+id/image_thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/text_title"
+            app:layout_constraintVertical_bias="0.95"
+            tools:text="@tools:sample/date/mmddyy" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
