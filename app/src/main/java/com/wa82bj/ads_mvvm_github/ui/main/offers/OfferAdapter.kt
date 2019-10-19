@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.DiffUtil
 import com.wa82bj.ads_mvvm_github.AppExecutors
 import com.wa82bj.ads_mvvm_github.R
 import com.wa82bj.ads_mvvm_github.data.model.OfferModel
-import com.wa82bj.ads_mvvm_github.databinding.ItemCheck24LinkBinding
 import com.wa82bj.ads_mvvm_github.databinding.ItemOfferBinding
+import com.wa82bj.ads_mvvm_github.databinding.ItemSyriaLinkBinding
 import com.wa82bj.ads_mvvm_github.ui.common.RetryAndWebWiewListener
 import com.wa82bj.ads_mvvm_github.ui.common.adapter.DataBoundListCustomAdapter
 
@@ -48,11 +48,11 @@ class OfferAdapter(
 
             ItemType.LAYOUT_RIGHT.value -> R.layout.item_offer
 
-            ItemType.MORE.value -> R.layout.item_check24_link
+            ItemType.MORE.value -> R.layout.item_syria_link
 
             ItemType.LAYOUT_LEFT.value -> R.layout.item_offer
 
-            else -> R.layout.item_check24_link
+            else -> R.layout.item_syria_link
         }
 
         return DataBindingUtil.inflate(
@@ -80,7 +80,7 @@ class OfferAdapter(
 
 
             }
-            is ItemCheck24LinkBinding -> {
+            is ItemSyriaLinkBinding -> {
                 binding.retry = retryAndWebWiewListener
                 binding.isError = isError
             }

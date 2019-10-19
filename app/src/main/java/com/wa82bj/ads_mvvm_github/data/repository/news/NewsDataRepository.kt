@@ -2,9 +2,8 @@ package com.wa82bj.ads_mvvm_github.data.repository.news
 
 import com.wa82bj.ads_mvvm_github.data.api.AdsApi
 import com.wa82bj.ads_mvvm_github.data.api.response.news.NewsEntity
-import com.wa82bj.ads_mvvm_github.data.db.ads.AdsDatabase
 import com.wa82bj.ads_mvvm_github.data.db.news.NewsDatabase
-import com.wa82bj.ads_mvvm_github.data.db.toNews
+import com.wa82bj.ads_mvvm_github.util.toNews
 import com.wa82bj.ads_mvvm_github.data.model.NewsModel
 import com.wa82bj.ads_mvvm_github.util.rx.SchedulerProvider
 import io.reactivex.Completable

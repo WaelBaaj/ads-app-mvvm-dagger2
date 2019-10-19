@@ -1,9 +1,9 @@
 package com.wa82bj.ads_mvvm_github.data.repository.ads
 
 import com.wa82bj.ads_mvvm_github.data.api.AdsApi
-import com.wa82bj.ads_mvvm_github.data.api.response.check24Response.ads.AdsEntity
+import com.wa82bj.ads_mvvm_github.data.api.response.checkResponse.ads.AdsEntity
 import com.wa82bj.ads_mvvm_github.data.db.ads.AdsDatabase
-import com.wa82bj.ads_mvvm_github.data.db.toProducts
+import com.wa82bj.ads_mvvm_github.util.toProducts
 import com.wa82bj.ads_mvvm_github.data.model.AdsModel
 import com.wa82bj.ads_mvvm_github.util.rx.SchedulerProvider
 import io.reactivex.Completable

@@ -25,6 +25,7 @@ import com.wa82bj.ads_mvvm_github.ui.common.Result
 import com.wa82bj.ads_mvvm_github.ui.common.RetryAndWebWiewListener
 import com.wa82bj.ads_mvvm_github.ui.common.adapter.EndlessScrollListener
 import com.wa82bj.ads_mvvm_github.ui.main.offers.OffersAdapterHor
+import com.wa82bj.ads_mvvm_github.util.toast
 import com.wa82bj.ads_mvvm_github.vmFactory.ViewModelFactory
 import dagger.android.support.DaggerFragment
 import timber.log.Timber

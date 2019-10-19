@@ -1,4 +1,4 @@
-package com.wa82bj.ads_mvvm_github.data.api.response.check24Response.ads
+package com.wa82bj.ads_mvvm_github.data.api.response.checkResponse.ads
 
 
 data class AdsResponse(

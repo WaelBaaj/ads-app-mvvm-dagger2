@@ -1,6 +1,6 @@
 package com.wa82bj.ads_mvvm_github.data.api
 
-import com.wa82bj.ads_mvvm_github.data.api.response.check24Response.ads.AdsResponse
+import com.wa82bj.ads_mvvm_github.data.api.response.checkResponse.ads.AdsResponse
 import com.wa82bj.ads_mvvm_github.data.api.response.news.NewsResponse
 import com.wa82bj.ads_mvvm_github.data.api.response.offer.OfferResponse
 import com.wa82bj.ads_mvvm_github.data.api.response.user.UserResponse

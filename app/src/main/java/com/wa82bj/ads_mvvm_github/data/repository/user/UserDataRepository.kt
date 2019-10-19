@@ -3,7 +3,7 @@ package com.wa82bj.ads_mvvm_github.data.repository.user
 import com.wa82bj.ads_mvvm_github.data.api.AdsApi
 import com.wa82bj.ads_mvvm_github.data.api.response.user.UserEntity
 import com.wa82bj.ads_mvvm_github.data.api.response.user.UserResponse
-import com.wa82bj.ads_mvvm_github.data.db.toUser
+import com.wa82bj.ads_mvvm_github.util.toUser
 import com.wa82bj.ads_mvvm_github.data.db.user.UserDatabase
 import com.wa82bj.ads_mvvm_github.data.model.UserModel
 import com.wa82bj.ads_mvvm_github.util.rx.SchedulerProvider

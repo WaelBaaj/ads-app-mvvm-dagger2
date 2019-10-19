@@ -3,7 +3,7 @@ package com.wa82bj.ads_mvvm_github.data.repository.offer
 import com.wa82bj.ads_mvvm_github.data.api.AdsApi
 import com.wa82bj.ads_mvvm_github.data.api.response.offer.OfferEntity
 import com.wa82bj.ads_mvvm_github.data.db.offer.OfferDatabase
-import com.wa82bj.ads_mvvm_github.data.db.toOffer
+import com.wa82bj.ads_mvvm_github.util.toOffer
 import com.wa82bj.ads_mvvm_github.data.model.OfferModel
 import com.wa82bj.ads_mvvm_github.util.rx.SchedulerProvider
 import io.reactivex.Completable

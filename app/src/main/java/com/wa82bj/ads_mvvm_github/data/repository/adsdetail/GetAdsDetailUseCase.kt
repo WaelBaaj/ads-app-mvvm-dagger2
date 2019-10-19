@@ -1,6 +1,6 @@
 package com.wa82bj.ads_mvvm_github.data.repository.adsdetail
 
-import com.wa82bj.ads_mvvm_github.data.api.response.check24Response.ads.AdsEntity
+import com.wa82bj.ads_mvvm_github.data.api.response.checkResponse.ads.AdsEntity
 import io.reactivex.Single
 import javax.inject.Inject
 

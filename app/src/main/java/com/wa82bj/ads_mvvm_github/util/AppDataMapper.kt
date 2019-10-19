@@ -1,6 +1,6 @@
-package com.wa82bj.ads_mvvm_github.data.db
+package com.wa82bj.ads_mvvm_github.util
 
-import com.wa82bj.ads_mvvm_github.data.api.response.check24Response.ads.AdsEntity
+import com.wa82bj.ads_mvvm_github.data.api.response.checkResponse.ads.AdsEntity
 import com.wa82bj.ads_mvvm_github.data.api.response.news.NewsEntity
 import com.wa82bj.ads_mvvm_github.data.api.response.offer.OfferEntity
 import com.wa82bj.ads_mvvm_github.data.api.response.user.UserEntity

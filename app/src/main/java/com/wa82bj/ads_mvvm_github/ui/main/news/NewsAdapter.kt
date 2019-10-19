@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.DiffUtil
 import com.wa82bj.ads_mvvm_github.AppExecutors
 import com.wa82bj.ads_mvvm_github.R
 import com.wa82bj.ads_mvvm_github.data.model.NewsModel
-import com.wa82bj.ads_mvvm_github.databinding.ItemCheck24LinkBinding
 import com.wa82bj.ads_mvvm_github.databinding.ItemNewsBinding
+import com.wa82bj.ads_mvvm_github.databinding.ItemSyriaLinkBinding
 import com.wa82bj.ads_mvvm_github.ui.common.RetryAndWebWiewListener
 import com.wa82bj.ads_mvvm_github.ui.common.adapter.DataBoundListCustomAdapter
 
@@ -47,7 +47,7 @@ class NewsAdapter(
 
             ItemType.LAYOUT_NEWS.value -> R.layout.item_news
 
-            else -> R.layout.item_check24_link
+            else -> R.layout.item_syria_link
         }
 
         return DataBindingUtil.inflate(
@@ -68,7 +68,7 @@ class NewsAdapter(
                 binding.newsModel = item
 
             }
-            is ItemCheck24LinkBinding -> {
+            is ItemSyriaLinkBinding -> {
                 binding.retry = retryAndWebWiewListener
                 binding.isError = isError
             }

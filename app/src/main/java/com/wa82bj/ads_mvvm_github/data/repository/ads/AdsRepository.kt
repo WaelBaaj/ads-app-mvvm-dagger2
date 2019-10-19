@@ -1,6 +1,6 @@
 package com.wa82bj.ads_mvvm_github.data.repository.ads
 
-import com.wa82bj.ads_mvvm_github.data.api.response.check24Response.ads.AdsEntity
+import com.wa82bj.ads_mvvm_github.data.api.response.checkResponse.ads.AdsEntity
 import com.wa82bj.ads_mvvm_github.data.model.AdsModel
 import io.reactivex.Completable
 import io.reactivex.Flowable

@@ -1,4 +1,4 @@
-package com.wa82bj.ads_mvvm_github.data.db
+package com.wa82bj.ads_mvvm_github.util
 
 import androidx.room.TypeConverter
 import org.threeten.bp.Instant

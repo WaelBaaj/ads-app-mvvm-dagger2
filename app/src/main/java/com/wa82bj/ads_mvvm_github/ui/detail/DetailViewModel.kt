@@ -2,7 +2,7 @@ package com.wa82bj.ads_mvvm_github.ui.detail
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.wa82bj.ads_mvvm_github.data.api.response.check24Response.ads.AdsEntity
+import com.wa82bj.ads_mvvm_github.data.api.response.checkResponse.ads.AdsEntity
 import com.wa82bj.ads_mvvm_github.data.api.response.offer.OfferEntity
 import com.wa82bj.ads_mvvm_github.data.repository.adsdetail.GetAdsDetailUseCase
 import com.wa82bj.ads_mvvm_github.data.repository.adsdetail.GetOfferDetailUseCase

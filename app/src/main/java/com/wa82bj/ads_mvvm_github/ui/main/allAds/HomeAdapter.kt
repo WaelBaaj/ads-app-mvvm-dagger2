@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.DiffUtil
 import com.wa82bj.ads_mvvm_github.AppExecutors
 import com.wa82bj.ads_mvvm_github.R
 import com.wa82bj.ads_mvvm_github.data.model.AdsModel
-import com.wa82bj.ads_mvvm_github.databinding.ItemCheck24LinkBinding
 import com.wa82bj.ads_mvvm_github.databinding.ItemRowLeftBinding
-import com.wa82bj.ads_mvvm_github.databinding.ItemRowRightBinding
+import com.wa82bj.ads_mvvm_github.databinding.ItemRowRightOldBinding
+import com.wa82bj.ads_mvvm_github.databinding.ItemSyriaLinkBinding
 import com.wa82bj.ads_mvvm_github.ui.common.RetryAndWebWiewListener
 import com.wa82bj.ads_mvvm_github.ui.common.adapter.DataBoundListCustomAdapter
 
@@ -49,13 +49,13 @@ class HomeAdapter(
         val layoutInflater = LayoutInflater.from(parent.context)
         val layoutId = when (viewType) {
 
-            ItemType.LAYOUT_RIGHT.value -> R.layout.item_row_right
+            ItemType.LAYOUT_RIGHT.value -> R.layout.item_row_right_old
 
-            ItemType.MORE.value -> R.layout.item_check24_link
+            ItemType.MORE.value -> R.layout.item_syria_link
 
             ItemType.LAYOUT_LEFT.value -> R.layout.item_row_left
 
-            else -> R.layout.item_check24_link
+            else -> R.layout.item_syria_link
         }
 
         return DataBindingUtil.inflate(
@@ -67,7 +67,7 @@ class HomeAdapter(
 
     override fun bind(binding: ViewDataBinding, item: AdsModel) {
         when (binding) {
-            is ItemRowRightBinding -> {
+            is ItemRowRightOldBinding -> {
                 binding.root.setOnClickListener {
                     binding.productsModel?.let { product ->
                         callback?.invoke(product)
@@ -83,7 +83,7 @@ class HomeAdapter(
 
 
             }
-            is ItemCheck24LinkBinding -> {
+            is ItemSyriaLinkBinding -> {
                 binding.retry = retryAndWebWiewListener
                 binding.isError = isError
             }
